@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Practica Sass</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -18,15 +18,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">home</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">blog<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -38,7 +37,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">abouts us <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -49,12 +48,14 @@
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
+        <li><a href="#">careers</a></li>
+        <li><a href="#">contacts us</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <!-- carrusel -->
-<section>
+<section class="section1">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -77,9 +78,53 @@
   </div>
 </div>
 </section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/sass/bootstrap/javascripts/bootstrap.js"></script>
-<script src="assets/js/app.js"></script>
+<!-- Seccion dos tratamientos -->
+<section class="section2">
+  <div class="container text-center">
+    <row>
+      <div class="col-md-3">
+        <img class="pictures img-responsive" src="assets/img/skin_care_1_thumb.jpg" alt=""><h4>SKIN CARE</h4><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam sint, harum numquam quasi nihil eum accusamus quas sit velit.</p><br><p class="readMore">READ MORE...</p>
+      </div>
+      <div class="col-md-3">
+        <img class="pictures img-responsive" src="assets/img/spa_ treatments_thumb.jpg" alt=""><h4>SPA TREATMENTS</h4><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magnam porro consequatur praesentium, accusamus vel a. Placeat fugiat, incidunt officiis!</p><br><p class="readMore">READ MORE...</p>
+      </div>
+      <div class="col-md-3">
+        <img class="pictures img-responsive" src="assets/img/aromatherapy_1_thumb.jpg" alt=""><h4>AROMATHERAPY</h4><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatem commodi iusto amet, perspiciatis necessitatibus sit ipsum aut? Minus.</p><br><p class="readMore">READ MORE...</p>
+      </div>
+      <div class="col-md-3">
+        <img class="pictures img-responsive" src="assets/img/massage_thumb.jpg" alt=""><h4>MASSAGE</h4><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nemo modi fuga, fugit cumque voluptas cum, animi dolore accusamus ducimus!</p><br><p class="readMore">READ MORE...</p>
+      </div>
+      
+    </row>
+  </div>
+</section>
 
+<!-- Sección toalla -->
+<section class="section3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img class="towel img-responsive" src="assets/img/welcom_thumb.jpg" alt="">
+      </div>
+      <div class="col-md-7">
+        <h3 class="text-center">WELCOME TO BEAUTY & HAIR</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nemo doloribus ipsam libero tempore, minima nobis praesentium voluptatem temporibus, est asperiores consequatur nulla ullam quaerat dolore reiciendis sunt aliquid voluptate?</p>
+        <br>
+        <p><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tenetur?</p>
+        <p><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tenetur?</p>
+        <p><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tenetur?</p>
+        <p><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, tenetur?</p>
+
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="sass/bootstrap/javascripts/bootstrap.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>

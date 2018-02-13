@@ -1,0 +1,44 @@
+.navbar {
+  margin: 0;
+  background-color: $colorNavbar;
+  border-radius: 0;
+  padding-left: 35%;
+}
+
+.navbar-default .navbar-nav li a {
+  color: $colorFontBlack;
+}
+
+.section1 {
+  border-bottom: 5px solid $colorBordesRadius;
+}
+
+.section2 {
+  @include section2();
+  border-bottom: 1px solid $colorFontBlack;
+}
+
+.pictures {
+  @include circle();
+}
+
+.readMore {
+  background-color: $colorBordesRadius;
+  display: inline-block;
+}
+
+.section3 {
+  background-color: $colorSection3;
+  @include section3();
+  border-top: 1px solid $colorLineaTopSection3;
+  border-bottom: 3px solid $colorLineaButtonSection3;
+  color: $colorTextSection2;
+}
+
+.section3 h3 {
+  color: $colorh3;
+}
+
+.towel {
+  border-radius: $borderImgTowel;
+}
